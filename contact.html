@@ -1,48 +1,71 @@
 <!DOCTYPE html>
+<html>
 <head>
-	<link type= "text/css" href="theme.css" rel="stylesheet">
-
+  <meta charset="utf-8">
+  <title>Hewan Abreha | Web Dev</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Ek+Mukta/Open+Sans:400,700,400italic,800,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="row header">
-  <div class="column column-2">
-
-  </div>
-  <div class="column column-8">
-    <table>
-      <tr>
-      </tr>
-      <tr>
-        <td><a href="index.html">Home</a></td>
-        <td><a href="about.html">About</a></td>
-        <td><a href="contact.html">Contact</a></td>
-        <td><a href="resume.html">Resume</a></td>
-      </tr>
-      <tr>
-      </tr>
-    </table>
-  </div>
-  <div class="column column-2"></div>
-</div>
-<div class="row middle">
-  <div class="column column-2"></div>
-  <div class="column column-8">
-        <div class="column column-6"></div>
-        <div class="column column-6">
-        	<nav id="external">
-        		<ul>
-        			<li><a href="index.html">Link to Projects</a></li>
-		      		<li><a href="https://www.linkedin.com/in/louis-hankins-pmp-2b77026" target="blank">Link to LinkedIn</a></li>
-		      		<li><a href="https://lohankins.github.io/portfolio_pages/index.html" target="blank">Link to Github</a></li>
-		      		<li><a href="https://profiles.generalassemb.ly/louis-hankins" target="blank">Link to GA Profile</a></li>
-	      		</ul>
-	      	</nav>
-        </div>
-  </div>
-  <div class="column column-2"></div>
-</div>
-<div class="row footer">
-  <div class="column column-12"></div>
-</div>
-</body>
-</html>
+  <header>
+    <a href="index.html" id="logo">
+      <h1>Louis O. Hankins</h1>
+      <h2>Full-Stack Web Developer</h2>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html" class="selected">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="wrapper">
+    <section id="primary">
+      <h3>General Information</h3>
+      <p>Interested in working with me? Contact me!</p>
+      <p>I live in Washington, DC</p>
+    </section>
+    <section id="secondary">
+      <h3>Contact Details</h3>
+      <ul class="contact-info">
+        <li class="phone"><a href="tel:202-674-0069">202-674-0069</a></li>
+        <li class="mail"><a href="mailto:LOHankins@gmail.com">LOHankins@gmail.com</a></li>
+        <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=LOHankins">@LOHankins</a></li>
+      </ul>
+    </section>
+    <div id="map"></div>
+    <script>
+    function initMap() {
+      var mapDiv = document.getElementById('map');
+      var map = new google.maps.Map(mapDiv, {
+        center: {lat: 38.837237, lng: -77.052349},
+        zoom: 8
+      });
+      var marker = new google.maps.Marker({
+        position: {lat: 38.837237, lng: -77.052349},
+        map: map,
+        title: 'Washington'
+      })
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+    async defer></script>
+    <footer>
+        <a target="_blank" href="https://twitter.com/LOHankins"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"/></a>
+        <a target="_blank" href="https://www.linkedin.com/in/louis-hankins-pmp-2b77026">
+          <img src="img/linkedin-wrap.png" alt="Linkedin Logo" class="social-icon" /></a>
+          <a target="_blank" href="https://github.com/LOHankins"><img src="img/github-wrap.png" alt="Github Logo" class="social-icon"  /></a>
+          <a target="_blank" href="https://profiles.generalassemb.ly/louis-hankins"><img src="img/ga.png" alt="GA Logo" class="social-icon"  /></a>
+        <!-- <img src="#" alt="Blog" /> -->
+        <!-- <img src="#" alt="Facebook Logo" /> -->
+<!--         <p>Built by Hewan Abreha with Love and Passion </p>
+        <p>&copy; 2016 All Rights Reserved.</p> -->
+      </footer>
+    </div>
+  </body>
+  </html>
