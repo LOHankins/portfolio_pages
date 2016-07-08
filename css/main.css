@@ -179,8 +179,9 @@ body {
 
 /* light blue header */
 header {
-  background: #367BA1;
+/*  background: #367BA1;*/
   border-color: #BEE6E9;
+  background: lavender;
 }
 
 /* nav background on mobile*/
@@ -190,7 +191,7 @@ nav {
 
 /* logo text */
 h1, h2 {
-  color: #fff;
+  color: #123456;
 }
 
 /* links */
@@ -199,7 +200,7 @@ a {
 }
 /* nav link */
 nav a, nav a:visited {
-  color: #fff;
+  color: #654321;
 }
 /* selected nav link */
 nav a.selected, nav a:hover {
