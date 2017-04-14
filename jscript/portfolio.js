@@ -5,15 +5,15 @@ var index;
 
 
 function handleClickSummaryButton0() {
-	console.log("handleClickSummaryButton1");
-	$(".summary1").css("display", "inline-block");
-	$(".detail1").css("display", "none");
+	console.log("handleClickSummaryButton0");
+	$(".summary0").css("display", "inline-block");
+	$(".detail0").css("display", "none");
 
 }
 function handleClickDetailButton0() {
-	console.log("handleClickDetailButton1");
-	$(".summary1").css("display", "none");
-	$(".detail1").css("display", "inline-block");
+	console.log("handleClickDetailButton0");
+	$(".summary0").css("display", "none");
+	$(".detail0").css("display", "inline-block");
 
 }
 function handleClickSummaryButton1() {
@@ -162,8 +162,8 @@ function handleClickDetailButton12() {
 }
 
 console.log("portfolio.js");
-$("#summary1").click(handleClickSummaryButton0);
-$("#detail1").click(handleClickDetailButton0);
+$("#summary0").click(handleClickSummaryButton0);
+$("#detail0").click(handleClickDetailButton0);
 $("#summary1").click(handleClickSummaryButton1);
 $("#detail1").click(handleClickDetailButton1);
 $("#summary2").click(handleClickSummaryButton2);

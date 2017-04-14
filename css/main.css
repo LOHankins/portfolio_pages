@@ -207,9 +207,11 @@ nav a.selected, nav a:hover {
   color: #1D4358;
 }
 /*
-Education and resume page
+Education and resume page */
 
-*/
+.detail0, .detail1, .detail2, .detail3, .detail4, .detail5, .detail6, .detail7, .detail8, .detail9, .detail10, .detail11, .detail12 {
+  font-weight: bold;
+}
 
 
 hr {
