@@ -4,6 +4,18 @@ $(document).on("ready", function() {
 var index;
 
 
+function handleClickSummaryButton0() {
+	console.log("handleClickSummaryButton1");
+	$(".summary1").css("display", "inline-block");
+	$(".detail1").css("display", "none");
+
+}
+function handleClickDetailButton0() {
+	console.log("handleClickDetailButton1");
+	$(".summary1").css("display", "none");
+	$(".detail1").css("display", "inline-block");
+
+}
 function handleClickSummaryButton1() {
 	console.log("handleClickSummaryButton1");
 	$(".summary1").css("display", "inline-block");
@@ -150,6 +162,8 @@ function handleClickDetailButton12() {
 }
 
 console.log("portfolio.js");
+$("#summary1").click(handleClickSummaryButton0);
+$("#detail1").click(handleClickDetailButton0);
 $("#summary1").click(handleClickSummaryButton1);
 $("#detail1").click(handleClickDetailButton1);
 $("#summary2").click(handleClickSummaryButton2);
